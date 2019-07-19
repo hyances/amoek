@@ -1,0 +1,616 @@
+:root {
+	--color-blanco: #FFFFFF;
+    --color-dorado: #D4BC7A;
+    --color-dorado-intermedio: #A48B48;
+    --color-dorado-oscuro: #816313;
+    --color-hover-btn: #ffdd82;
+    --color-dorado-sombra-btn: #4d380061;
+    --color-gris-sombra: #bdcfe0;
+    --color-footer: #3C3C3C;
+    --color-negro: #000000;
+
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	color: var(--color-dorado-intermedio);
+}
+h1{
+	font-size: 2.5rem;
+	font-weight: 100;
+}
+p{
+	font-size: 1rem;
+	line-height: 1.1rem;
+}
+.display-2{
+	font-size: 2.5rem;
+	font-weight: 100;
+	text-shadow: 0px 1px 4px #000;
+}
+.p-texto-introduccion{
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	margin-bottom: 2rem;
+}
+/* navegacion */
+.navbar-brand-aomek{
+	display: block;
+	width: 100%;
+}
+.nav-item-amoek{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.navbar-light .navbar-nav .nav-item-amoek .nav-link-amoek{
+	color: var(--color-blanco);
+}
+.nav-smart{
+	visibility: visible;
+}
+.color-colapse-nav{
+	background-color: var(--color-dorado-oscuro);
+	border:none;
+	border-radius: 0;
+}
+.nav-desktop{
+	visibility: collapse;
+}
+.menu{
+	display: inline-block;
+	visibility: visible;
+}
+.icon{
+	visibility: collapse;
+}
+.mas-opciones{
+	background-color: red;
+}
+
+
+
+/* ///////////////////////// INICIO DE INDEX ////////////////// */
+
+
+/* Header */
+
+header.header-video {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header.header-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header.header-video .container {
+  position: relative;
+  z-index: 2;
+}
+
+header.header-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header.header-video {
+    /* background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll; */
+    background: url('{% static "image/amoek.mp4" %}') black no-repeat center center scroll;
+  }
+  header.header-video video {
+    display: none;
+  }
+}
+
+
+/* fin Header*/
+
+/* carousel */
+.carousel-caption-amoek {
+    /* top: 210px; */
+}
+
+.form-reserva {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+	.menu{
+	display: inline-block;
+	visibility: collapse;
+}
+.icon{
+	visibility: visible;
+}
+}
+/* 
+Formulario de reserva */
+
+.form-reserva {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    left: 5%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #ffffffbf;
+    color: #fff;
+    text-align: center;
+    border-radius: 35px;
+	}
+	.form-control.form-control-amoek{
+	text-align: center;
+    border-radius: 50px;
+    padding: 25px 15px;
+    font-size: .8rem;
+	}
+	.btn-reserva-aomek{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	color: var(--color-blanco);
+	background: rgba(219,190,113,1);
+	background: -moz-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(219,190,113,1)), color-stop(100%, rgba(177,140,44,1)));
+	background: -webkit-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbbe71', endColorstr='#b18c2c', GradientType=1 );
+	border-radius: 50px;
+	padding: 12px;
+	font-weight: 600;
+	}
+
+/* Secciones */
+
+section{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.about{
+	background-color: var(--color-dorado);
+	color: var(--color-blanco);
+}
+.about .img-thumbnail{
+	padding: .8rem;
+}
+.btn-light-amoek{
+	margin-top: 1rem;
+	padding: 10px 30px;
+	border-radius: 50px;
+	font-size: 1.1rem;
+	color:var(--color-dorado-intermedio);
+	box-shadow: 0 25px 20px var(--color-dorado-sombra-btn);
+}
+.btn-light-amoek:hover{
+	color:var(--color-dorado-intermedio);
+ 	background: var(--color-hover-btn);
+ 	transition: color .3s,background .3s;
+}
+.btn-light-amoek:focus{
+	color:var(--color-dorado-intermedio);
+ 	background: var(--color-hover-btn);
+ 	transition: color .3s,background .3s;
+}
+.btn-dorado-amoek{
+	background-color: var(--color-dorado-intermedio);
+	margin-top: 1rem;
+	padding: 10px 30px;
+	border-radius: 50px;
+	font-size: 1.1rem;
+	color:var(--color-blanco);
+	box-shadow: 0 25px 20px var(--color-dorado-sombra-btn);
+}
+.btn-dorado-amoek:hover{
+	color:var(--color-dorado-intermedio);
+ 	background: var(--color-hover-btn);
+ 	transition: color .3s,background .3s;
+}
+
+/* servicios */
+.servicios{
+
+}
+.service-amoek{
+	background-color:var(--color-blanco);
+	padding: 15px 35px 5px;
+	font-size: .8rem;
+	line-height: 1.2rem;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	border-radius: 50px;
+	box-shadow: 0 8px 18px var(--color-gris-sombra);
+}
+
+.icon-aling{
+	line-height: 3rem;
+	display: inline-block;
+	width: auto;
+}
+.title-service{
+	display: inline-block;
+	width: auto;
+}
+.service-amoek .fas{
+    font-size: 1.3rem;
+}
+.service-amoek span{
+	font-size: .8rem;
+}
+/* Habitaciones */
+.habitaciones{
+	background-color: var(--color-dorado-oscuro);
+	text-align: center;
+}
+.habitaciones h1{
+	color: var(--color-blanco);
+}
+.habitaciones .p-texto-introduccion{
+	color: var(--color-blanco);
+}
+.habitaciones .card{
+	border:none;
+	border-radius: 0px;
+	margin-bottom: 4rem;
+}
+.habitaciones .card-img-top{
+	border:none;
+	border-radius: 0px;
+}
+.habitaciones .card-title{
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.habitaciones .btn-habitacion{
+	background: rgba(211,181,100,1);
+    background: -webkit-linear-gradient(left, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+    background: -o-linear-gradient(left, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+    background: linear-gradient(to right, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3b564', endColorstr='#b18c2c', GradientType=1 );
+	text-transform: uppercase;
+	display: inline-block;
+    position: absolute;
+    width: 70%;
+    border-radius: 50px;
+    padding: 12px 44px;
+    left: 15%;
+    border:none; 
+}
+.habitaciones .btn-habitacion:hover{
+	color:var(--color-dorado-intermedio);
+ 	background: var(--color-hover-btn);
+ 	 width: 72%;
+ 	 left: 14%;
+ 	 transition: width .2s,left .2s;
+}
+/* Paquetes turisticos */
+.paquetes{
+	background-color: var(--color-dorado);
+	color: var(--color-blanco);
+}
+.paquetes .card{
+	background-color: transparent;
+	text-align: center;
+	border:none;
+	border-radius: 0px;
+}
+.paquetes .card-img-top{
+	border-radius: 0px;
+}
+.paquetes .card-title{
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/* Footer */
+footer{
+	background-color: var(--color-footer);
+	padding-top: 60px;
+	color:var(--color-blanco);
+}
+footer .navegacion-footer a{
+	display: block;
+}
+footer a{
+	color: var(--color-blanco);
+	text-transform: uppercase;
+	padding: 0 15px;
+}
+footer a:hover{
+	text-decoration: none;
+	color: var(--color-dorado-intermedio);
+}
+footer i{
+	margin-top: 30px;
+	display: inline-block;
+}
+
+footer .copy{
+	background-color: var(--color-negro);
+	text-align:center;
+	padding-top: .8rem;
+	padding-bottom: .8rem;
+}
+
+footer .copy a{
+	font-size: .9rem;
+	text-transform: none;
+}
+@media (min-width: 992px) {
+	h1{
+	font-size: 3.5rem;
+	font-weight: 100;
+	}
+	.nav-smart{
+	visibility: collapse;
+	}
+	.nav-desktop{
+		visibility: visible;
+	}
+	.logo{
+    width: 160px;
+    -webkit-transition: width 1s;
+	 	 transition: width 1s;
+	}
+	.carousel-caption-amoek {
+    /* top: 350px; */
+    text-align: right;
+    text-shadow: 0px 1px 4px #000;
+	}
+	.fixed{
+	 	width: 100px;
+	 	 -webkit-transition: width 1s;
+	 	 transition: width 1s;
+	}
+	
+	.form-reserva {
+    position: absolute;
+    right: 15%;
+    bottom: 40px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #ffffffbf;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+	}
+	.form-control.form-control-amoek{
+	text-align: center;
+	border-radius: 50px;
+	padding: 35px 25px;
+	font-size: 1rem;
+	}
+	.btn-reserva-aomek{
+	display: inline-block;
+	width: auto;
+	margin-top: 0;
+	color: var(--color-blanco);
+	background: rgba(219,190,113,1);
+	background: -moz-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(219,190,113,1)), color-stop(100%, rgba(177,140,44,1)));
+	background: -webkit-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	background: linear-gradient(45deg, rgba(219,190,113,1) 0%, rgba(177,140,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbbe71', endColorstr='#b18c2c', GradientType=1 );
+	border-radius: 50px;
+	margin-left: 15px;
+	padding: 22px 40px;
+	font-weight: 600;
+	}
+
+/* 	Habitaciones */
+	.habitaciones .card-title{
+	font-weight: 200;
+	}
+	.habitaciones .btn-habitacion{
+	background: rgba(211,181,100,1);
+    background: -webkit-linear-gradient(left, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+    background: -o-linear-gradient(left, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+    background: linear-gradient(to right, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3b564', endColorstr='#b18c2c', GradientType=1 );
+	text-transform: uppercase;
+	display: inline-block;
+    position: absolute;
+    width: 50%;
+    border-radius: 50px;
+    padding: 12px 44px;
+    left: 25%;
+    border:none; 
+	}
+	.habitaciones .btn-habitacion:hover{
+	color:var(--color-dorado-intermedio);
+ 	background: var(--color-hover-btn);
+ 	width: 52%;
+ 	left: 24%;
+ 	transition: width .2s,left .2s;
+	}
+	/* Paquetes */
+	.paquetes .card-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+	}
+	/* Footer */
+	footer .navegacion-footer a{
+	display: inline-block;
+	}
+	.body-contact{
+	position: relative;
+	top:-200px;
+	background-color: var(--color-blanco);
+	padding: 8rem;
+
+	}
+}
+/* ///////////////////////// FIN DE INDEX ////////////////// */
+/* ///////////////////////// NOSOTROS ////////////////// */
+
+
+header.basic-header{
+	padding-bottom: 38vh;
+	padding-top: 48vh;
+	height: 70vh;
+  	min-height: 48vh;
+  	color: var(--color-blanco);
+}
+header.header-background-1{
+	background-image: url(../image/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ///////////////////////// HABITACIONES ////////////////// */
+/* Habitaciones */
+.habitaciones-page{
+	background-color: var(--color-dorado);
+	text-align: center;
+}
+
+.habitaciones .p-texto-introduccion{
+	color: var(--color-blanco);
+}
+.habitaciones-page .card{
+	border:none;
+	border-radius: 0px;
+	margin-bottom: 4rem;
+}
+.habitaciones-page .card-body{
+	padding: 3rem 3rem;
+}
+.habitaciones-page .card-img-top{
+	border:none;
+	border-radius: 0px;
+}
+.habitaciones-page .card-title{
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}.habitaciones-page .service-amoek{
+	text-align: left;
+}
+/* .habitaciones-page .btn-habitacion{
+	background: rgba(211,181,100,1);
+    background: -webkit-linear-gradient(left, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+    background: -o-linear-gradient(left, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+    background: linear-gradient(to right, rgba(211,181,100,1) 0%, rgba(177,140,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3b564', endColorstr='#b18c2c', GradientType=1 );
+	text-transform: uppercase;
+	display: inline-block;
+    position: absolute;
+    width: 70%;
+    border-radius: 50px;
+    padding: 12px 44px;
+    left: 15%;
+    border:none; 
+}
+.habitaciones-page .btn-habitacion:hover{
+	color:var(--color-dorado-intermedio);
+ 	background: var(--color-hover-btn);
+ 	 width: 72%;
+ 	 left: 14%;
+ 	 transition: width .2s,left .2s;
+} */
+
+
+/* ///////////////////////// FIN DE HABITACIONES ////////////////// */
+
+/* ///////////////////////// GALERIA ////////////////// */
+/* Galeria */
+.galeria-page{
+	background-color: var(--color-dorado);
+	text-align: center;
+}
+
+.galeria-page .p-texto-introduccion{
+	color: var(--color-blanco);
+}
+.galeria-page .card{
+	border:none;
+	border-radius: 0px;
+	margin-bottom: 4rem;
+}
+.galeria-page .card-body{
+	padding: 1rem 1rem;
+}
+.galeria-page .card-img-top{
+	border:none;
+	border-radius: 0px;
+}
+.galeria-page .card-title{
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}.galeria-page .service-amoek{
+	text-align: left;
+}
+
+/* /////CONTACTO///// */
+.contacto-page{
+	background-color: var(--color-dorado);
+}
+
+.body-contact{
+	position: static;
+	top:-200px;
+	background-color: var(--color-blanco);
+	padding: 50px 15px;
+
+}
+.btn-enviar-dark-amoek{
+	display: block;
+	margin: 0 auto;
+	padding: 10px 50px;
+	border-radius: 50px;
+	font-size: 1.1rem;
+	background-color: var(--color-dorado-intermedio);
+	color:var(--color-blanco);
+	box-shadow: 0 25px 20px var(--color-dorado-sombra-btn);
+}
+.form-control.form-control-contact-amoek{
+    border-radius: 50px;
+    padding: 25px 15px;
+    font-size: .8rem;
+}
+.contacto .maps{
+	padding: 0px;
+}

@@ -1,1 +1,4 @@
 Mezzanine==4.3.1
+django-robots
+-e git+https://bitbucket.org/naritas/mezzanine-wubook.git#egg=Mezzanine-Wubook
+
