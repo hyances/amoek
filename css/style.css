@@ -130,7 +130,7 @@ header.header-video .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header.header-video {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url('https://hotelamoek.com/static/image/fachada.jpg') black no-repeat center center scroll;
   }
   header.header-video video {
     display: none;
@@ -547,7 +547,7 @@ footer .copy a{
 	.form-reserva {
 	position: absolute;
 	/* right: 15%;
-	bottom: 40px; 
+	bottom: 40px;
 	left: 15%;
 	z-index: 10;
 	padding-top: 1.2%;
